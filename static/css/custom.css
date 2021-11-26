@@ -7,17 +7,14 @@ body{
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
   /* Track */
   ::-webkit-scrollbar-track {
     background: #edf8fe;
   }
-  
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #d4ebf7;
   }
-  
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #afd4e8;
