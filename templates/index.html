@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} LECTAROOM {% endblock %}
+
+
+{% block content %} 
+
+
+            <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-6 main_section">
+                            <h5>Welcome to</h5>
+                            <h1>LECTAROOM</h1>
+                            <span>Sign in now to <strong>chat and collaborate </strong> all in one place. </span><br>
+                            <!--<span>Where you can <strong>Enjoy</strong> <br>Your <strong>Study</strong> </span><br>-->
+                            <hr>
+                            <a class="nav-link btn btn-outline-success" href="{% url 'signup' %}"><i class="fas fa-user-plus"></i> Sign Up </a>
+                            <br>
+                            <a class="nav-link btn btn-primary" href="{% url 'login' %}"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                               
+                    </div>
+                    <div class="col-6">
+                            <img style="height:80vh" src="{% static 'others/main.svg' %}" alt="">
+                    </div>
+            </div>
+
+{% endblock %}

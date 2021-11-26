@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Exam Submissions{% endblock %}
+
+
+{% block content %}
+<style>
+        .floated {
+        float:left;
+        margin-right:5px;
+        }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tr {
+        background-color: #f5f5f5;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+      }
+      tr:hover {
+        background-color: #cdcdcd;
+      }
+    </style>
+    <div class="container">
+
+        <div class="col-12 col-sm-6 col-md-10">
+            <br>
+            {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
+                <h4 class="floated"><a href="{% url 'assignment-list' %}" class="btn btn-info">Show all Assignments</a></h4>
+                    <h4 class="floated"><a href="{% url 'exam-list' %}" class="btn btn-info">Show all Exams</a></h4>
+            {% endif %}
+            <br><br>
+                    <strong><h3>Exam Submissions</h3></strong>
+        <hr/>
+<table>
+                <thead>
+                <tr>
+                    <th><h4>S. No</h4></th>
+                    <th><h4>Name</h4></th>
+                    <th><h4>ID</h4></th>
+                    <th><h4>Description</h4></th>
+                    <th><h4>Download file</h4></th>
+                </tr>
+                </thead>
+                <tbody>
+            {% for foo in exam_submission %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td><p>{{ foo.name }} </p></td>
+                <td><p>{{ foo.university_id }} </p></td>
+                <td><p>{{ foo.content }}  </p></td>
+                <td><a href="{{foo.file.url}}" download><b>Download Answer</b></a></td>
+
+                <!--<a href="{% url 'assignment-submission-delete' foo.id %}">Delete Assignment</a>-->
+             </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+
+
+
+
+            <br/>
+
+
+            <br/>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}

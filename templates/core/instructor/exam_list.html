@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Exams{% endblock %}
+
+
+{% block content %}
+<style>
+    .floated {
+        float:left;
+        margin-right:5px;
+        }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tr {
+        background-color: #f5f5f5;
+      }
+      th,
+      td {
+        vertical-align:top;
+        padding: 15px;
+        text-align: justify;
+        border-bottom: 1px solid #ccc;
+      }
+      tr:hover {
+        background-color: #cdcdcd;
+      }
+    </style>
+    <div class="container">
+
+        <div class="col-12 col-sm-6 col-md-10">
+            <br>
+            {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
+            <h4 class="floated"><a href="{% url 'assignment-create' %}" class="btn btn-info">Create an Exam</a></h4>
+                    <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
+            {% endif %}
+            <br><br>
+            {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
+                                {% for foo in exam %}
+                    <hr/>
+                    <h3><strong> {{ foo.title }}  </strong></h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th style="width:12%"><h4>S. No</h4></th>
+                            <th style="width:68%"><h4>Content</h4></th>
+                            <th style="width:10%"><h4>Marks</h4></th>
+                            <th style="width:10%"><h4>Time</h4></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td><p>{{ foo.content }} </p></td>
+                                <td><p>{{ foo.marks }} </p></td>
+                                <td><p>{{ foo.duration }}  </p></td>
+                             </tr>
+                            </tbody>
+                    </table>
+                        {% endfor %}
+
+                <hr/>
+
+
+            {% else %}
+                {% for foo in exam %}
+            <br>
+                    <h3><strong> {{ foo.title }}  </strong></h3>
+                    <hr/>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th style="width:12%"><h4>S. No</h4></th>
+                            <th style="width:40%"><h4>Content</h4></th>
+                            <th style="width:10%"><h4>Marks</h4></th>
+                            <th style="width:10%"><h4>Time</h4></th>
+                            <th style="width:30%"><h4>Submission Status</h4></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td><p>{{ foo.content }} </p></td>
+                                <td><p>{{ foo.marks }} </p></td>
+                                <td><p>{{ foo.duration }}  </p></td>
+                                <td><h4><a href="{% url 'exam-submission' %}">Submit</a></h4></td>
+                             </tr>
+
+                        </tbody>
+                    </table>
+                    {% endfor %}
+
+
+
+                <br/>
+
+            {% endif %}
+        </div>
+
+    </div>
+
+{% endblock %}
