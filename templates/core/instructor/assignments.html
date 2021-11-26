@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Assignments{% endblock %}
-
-
 {% block content %}
 <style>
       .floated {
@@ -26,47 +24,44 @@
       tr:hover {
         background-color: #cdcdcd;
       }
-    </style>
-    <br>
-    <div class="container">
-
-        <div class="col-12 col-sm-6 col-md-10">
+</style>
+<br>
+<div class="container">
+    <div class="col-12 col-sm-6 col-md-10">
         {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
             <h4 class="floated"><a href="{% url 'assignment-create' %}" class="btn btn-info">Create an Assignment</a></h4>
-                <h4 class="floated"><a href="{% url 'assignment-submission-list' %}" class="btn btn-info">Submitted Assignments</a></h4>
-                    <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
-            {% endif %}
-            <br>
-            <!--<h4><a href="{% url 'assignment-create' %}">Create an Assignment</a></h4>-->
-            {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
-                {% for foo in assignment %}
-                    <hr/>
-                    <h3><strong> {{ foo.title }}  </strong></h3>
-                    <table>
-                        <thead>
+            <h4 class="floated"><a href="{% url 'assignment-submission-list' %}" class="btn btn-info">Submitted Assignments</a></h4>
+            <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
+        {% endif %}
+        <br>
+        <!--<h4><a href="{% url 'assignment-create' %}">Create an Assignment</a></h4>-->
+        {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
+            {% for foo in assignment %}
+            <hr/>
+                <h3><strong> {{ foo.title }}  </strong></h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width:12%"><h4>S. No</h4></th>
+                        <th style="width:68%"><h4>Content</h4></th>
+                        <th style="width:10%"><h4>Marks</h4></th>
+                        <th style="width:10%"><h4>Time</h4></th>
+                    </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <th style="width:12%"><h4>S. No</h4></th>
-                            <th style="width:68%"><h4>Content</h4></th>
-                            <th style="width:10%"><h4>Marks</h4></th>
-                            <th style="width:10%"><h4>Time</h4></th>
+                            <td>{{forloop.counter}}</td>
+                            <td><p>{{ foo.content }} </p></td>
+                            <td><p>{{ foo.marks }} </p></td>
+                            <td><p>{{ foo.duration }}  </p></td>
                         </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{{forloop.counter}}</td>
-                                <td><p>{{ foo.content }} </p></td>
-                                <td><p>{{ foo.marks }} </p></td>
-                                <td><p>{{ foo.duration }}  </p></td>
-                             </tr>
-                            </tbody>
-                    </table>
-                        {% endfor %}
-
-                <hr/>
-
+                       </tbody>
+                </table>
+           {% endfor %}
+            <hr/>
             {% else %}
                 {% for foo in assignment %}
-            <br>
+                <br>
                     <h3><strong> {{ foo.title }}  </strong></h3>
                     <hr/>
                     <table>
@@ -92,12 +87,8 @@
                     </table>
                     {% endfor %}
                 <hr/>
-
-
             {% endif %}
             <br/>
         </div>
-
     </div>
-
 {% endblock %}

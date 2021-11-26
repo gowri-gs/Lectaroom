@@ -25,11 +25,10 @@
       tr:hover {
         background-color: #cdcdcd;
       }
-    </style>
-    <div class="container">
-
-        <div class="col-12 col-sm-6 col-md-10">
-            <br>
+</style>
+<div class="container">
+    <div class="col-12 col-sm-6 col-md-10">
+        <br>
             {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
                 <h4 class="floated"><a href="{% url 'assignment-list' %}" class="btn btn-info">Show all Assignments</a></h4>
                     <h4 class="floated"><a href="{% url 'exam-list' %}" class="btn btn-info">Show all Exams</a></h4>
@@ -37,7 +36,7 @@
             <br><br>
                     <strong><h3>Exam Submissions</h3></strong>
         <hr/>
-<table>
+<           table>
                 <thead>
                 <tr>
                     <th><h4>S. No</h4></th>

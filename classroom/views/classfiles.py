@@ -19,4 +19,4 @@ class ClassFilesView(View):
             'room':room,
             's' :students
         }
-        return render (request,'class/people.html',context)
+        return render (request,'class/classfiles.html',context)

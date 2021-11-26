@@ -50,13 +50,6 @@ class AssignmentView(ListView):
     def get_queryset(self):
         return self.model.objects.all()  # filter(user_id=self.request.user.id).order_by('-id')
 
-
-# DELETE ASSIGNMENT VIEW
-class AssignmentDeleteView(DeleteView):
-    model = Assignment
-    success_url = reverse_lazy('assignment-list')
-
-
 # ASSIGNMENT SUBMISSION VIEW
 class AssignmentSubmissionView(CreateView):
     template_name = 'core/instructor/assignment_submission.html'
@@ -128,13 +121,6 @@ class ExamListView(ListView):
     def get_queryset(self):
         return self.model.objects.all().order_by('-id')  # filter(user_id=self.request.user.id).order_by('-id')
 
-
-# EXAM DELETE VIEW
-class ExamDeleteView(DeleteView):
-    model = Exam
-    success_url = reverse_lazy('exam-list')
-
-
 # EXAM SUBMISSION VIEW
 class ExamSubmissionView(CreateView):
     template_name = 'core/instructor/exam_submission.html'
@@ -178,13 +164,6 @@ class AssignmentSubmissionListView(ListView):
     def get_queryset(self):
         return self.model.objects.all().order_by('-id')  # filter(user_id=self.request.user.id).order_by('-id')
 
-
-# EXAM DELETE VIEW
-class AssignmentSubmissionDelete(DeleteView):
-    model = AssignmentSubmission
-    success_url = reverse_lazy('assignment-submission-list')
-
-
 # VIEW FOR Assignment Submission List
 class ExamSubmissionListView(ListView):
     model = ExamSubmission
@@ -200,6 +179,3 @@ class ExamSubmissionListView(ListView):
         return self.model.objects.all().order_by('-id')  # filter(user_id=self.request.user.id).order_by('-id')
 
 
-class ExamSubmissionDelete(DeleteView):
-    model = ExamSubmission
-    success_url = reverse_lazy('exam-submission-list')

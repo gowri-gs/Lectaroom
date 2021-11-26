@@ -1,16 +1,10 @@
- {% extends 'base.html' %}
-
+{% extends 'base.html' %}
 {% load bootstrap %}
-
 {% block title %} Exam Create {% endblock %}
-
 {% block content %}
-
-    <section class="dentist-area section-padding-40-0">
+<section class="dentist-area section-padding-40-0">
 <div class="container">
-
 <div class="row justify-content-center">
-
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <center> <h3> Create Exam </h3></center>
                           <br/>
@@ -20,15 +14,12 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <input type="submit" value="Create" class="btn btn-primary btn-md text-white">
+                                <button onclick="alert('Exam Created Successfully')" class="btn btn-primary btn-md text-white">Create</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
-
 {% endblock %}

@@ -3,7 +3,7 @@ from django.db.models.query_utils import select_related_descend
 from django.shortcuts import redirect, render, get_object_or_404
 from django.views import View
 from django.contrib import messages
-from classroom.models import ClassRoom,RoomStream
+from classroom.models import ClassRoom,RoomStream, Comment
 from profiles.models import Teacher, Student
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required

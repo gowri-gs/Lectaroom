@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="row" style="margin:0 auto;  height:90vh;">
-        <div class="messages" style="position: absolute; bottom:3%; left:80%; z-index: 200; width:18vw;" >
+        <div class="messages" style="position: absolute; top:3%; right:-104%; z-index: 200;" >
             {% for message in messages %}
                 <div class="alert alert-primary" {% if message.tags %}
                     class="{{ message.tags }}"{% endif %}>{{ message }}

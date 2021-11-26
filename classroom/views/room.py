@@ -8,8 +8,6 @@ from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 # importing custom decorators
 from src.decorators import SingleClassForbidden
-# Email Configure 
-#from django.core.mail import send_mail
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.conf import settings
@@ -31,7 +29,7 @@ class CreateClassRoom(View):
         user = request.user.teachers
         room = ClassRoom(teacher =user,unit=unit, name=name, details = detail )
         room.save()
-        messages.success(request,' Classroom has been created')
+        messages.success(request,'Classroom has been created')
         return redirect('teacher')
 
 # view All class room
@@ -105,85 +103,3 @@ class LeaveClass(View):
         membership.delete()
         messages.warning(request,'You have left the Classroom')
         return redirect('student')
-
-class SendMail(View):
-    @method_decorator(login_required(login_url='login'))
-    def dispatch(self,request,*args,**kwargs):
-        return super().dispatch(request,*args,**kwargs)
-
-    def get(self,request):
-        return render (request,'dashboard/teacher/send_mail.html')
-
-    def post(self,request):
-        email = request.POST.get('email')
-        code = request.POST.get('code')
-        user = request.user
-        body = render_to_string('email.html',{
-            'code':code,
-            'user':user
-        })
-
-        if request.POST.get('con'):
-            mail = EmailMessage(
-                subject ='Join the ClassRoom Now',
-                body = body,
-                from_email= settings.EMAIL_HOST_USER,
-                to = [email]
-                )
-            mail.content_subtype = "HTML"
-            mail.send()
-            messages.success(request,'Your Emails has been SENT')
-            return redirect('send')
-        else:
-            mail = EmailMessage(
-            subject ='Join the ClassRoom Now',
-            body = body,
-            from_email= settings.EMAIL_HOST_USER,
-            to = [email]
-            )
-            mail.content_subtype = "HTML"
-            mail.send()
-            messages.success(request,'Your Email has been SENT')
-            return redirect('teacher')
-
-        '''
-        send_mail(
-            'Join The Class', # Subjects here
-            'code', # Body Messages
-            settings.EMAIL_HOST_USER, # email sender
-            [email], # to reciever email 
-            fail_silently=False,
-        )
-        messages.success(request,'Email has Sent')
-        return redirect('teacher')
-       
-        
-        if request.POST.get('continue'):
-            email = request.POST.get('email')
-            code = request.POST.get('code')
-            send_mail(
-                'Join The Class', # Subjects here
-                'Hi yeasin join the class here and \n code is ' + code + ' get now', # Body Messages
-                settings.EMAIL_HOST_USER, # email sender
-                [email], # to reciever email 
-                fail_silently=False,
-            )
-            messages.success('Email has Sent')
-            return redirect('send')
-            
-        elif request.POST.get('back'):
-            email = request.POST.get('email')
-            code = request.POST.get('code')
-            send_mail(
-                'Join The Class', # Subjects here
-                'Hi yeasin join the class here and \n code is ' + code + ' get now', # Body Messages
-                settings.EMAIL_HOST_USER, # email sender
-                [email], # to reciever email 
-                fail_silently=False,
-            )
-            messages.success('Email has Sent') 
-            return redirect('teacher')
-            
-        else:
-            return HttpResponse ('Hey that an error')    
-        '''       

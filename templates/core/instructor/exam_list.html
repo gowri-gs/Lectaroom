@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Exams{% endblock %}
-
-
 {% block content %}
 <style>
     .floated {
@@ -26,14 +24,13 @@
       tr:hover {
         background-color: #cdcdcd;
       }
-    </style>
-    <div class="container">
-
-        <div class="col-12 col-sm-6 col-md-10">
-            <br>
-            {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
-            <h4 class="floated"><a href="{% url 'assignment-create' %}" class="btn btn-info">Create an Exam</a></h4>
-                    <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
+</style>
+<div class="container">
+    <div class="col-12 col-sm-6 col-md-10">
+        <br>
+        {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
+        <h4 class="floated"><a href="{% url 'assignment-create' %}" class="btn btn-info">Create an Exam</a></h4>
+            <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
             {% endif %}
             <br><br>
             {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
@@ -59,10 +56,7 @@
                             </tbody>
                     </table>
                         {% endfor %}
-
                 <hr/>
-
-
             {% else %}
                 {% for foo in exam %}
             <br>
@@ -86,18 +80,11 @@
                                 <td><p>{{ foo.duration }}  </p></td>
                                 <td><h4><a href="{% url 'exam-submission' %}">Submit</a></h4></td>
                              </tr>
-
                         </tbody>
                     </table>
                     {% endfor %}
-
-
-
                 <br/>
-
             {% endif %}
         </div>
-
     </div>
-
 {% endblock %}
