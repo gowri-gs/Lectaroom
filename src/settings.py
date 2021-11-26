@@ -141,20 +141,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# Email SETUP
-EMAIL_HOST = 'smtp.zoho.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'yeazin@zohomail.com'
-EMAIL_HOST_PASSWORD = 'iiCF*G$Kqg882SJ'
-EMAIL_USE_SSL = True 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-
-# Repository Owned By Nazrul Islam Yeasin 
-# Facebook : https://facebook.com/yeazin.io
-# Twitter  : https://twitter.com/_yeazin
-# Github : https://github.com/yeazin
-# linked In : https://www.linkedin.com/in/yeazin/
-# website : yeazin.github.io
