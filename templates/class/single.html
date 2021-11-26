@@ -75,7 +75,6 @@
               </div>
               <div class="col-9">
                 <div class="sendbox">
-                  <img src="{{ user.students.photo.url }}" alt="">
                   <form action="{% url 'stream_create' room.id %}" method="POST" style="display: flex;">
                     {% csrf_token %}
                     <input type="text" name ="post" class="form-control" placeholder="Add Stream" required>
@@ -87,7 +86,6 @@
                   {% for s in stream %}
                    <div class="stream">
                     <div style="width:100%;" class="ml-4">
-                      <img src="{{ s.user.students.photo.url }}" alt="">
                         {% if s.user.students.name != "" %}
                        <h5 style="padding:0.5rem 1.5rem;"><strong>{{ s.user.students.name }}</strong></h5>
                       {% else %}

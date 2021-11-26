@@ -59,7 +59,6 @@ class StudentRegister(View):
     def post(self,request,*args,**kwargs):
         username = request.POST.get('username')
         name = request.POST.get('name')
-        photo = request.FILES.get('image')
         password1 = request.POST.get('password1')
         password2 = request.POST.get('password2')
         mail_check = User.objects.filter(email=username)
@@ -81,9 +80,9 @@ class StudentRegister(View):
             user = User(**auth_info)
             user.is_student = True
             user.save()
-        user_obj = Student(user=user, photo=photo,name = name )
+        user_obj = Student(user=user,name = name )
         user_obj.save()
-        messages.success(request,'Thanks for Singing !!, Login to Continue')
+        messages.success(request,'Successful Registeration')
         return redirect ('login')
 
 class LoginView(View):
