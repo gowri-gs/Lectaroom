@@ -47,28 +47,27 @@ Run the development server
 </div>
 <br><br>
 <h2><b>Features and Interfaces</b></h2>
-<h3>Commmon Features and Interfaces</h3><br>
+<h3>Commmon Features and Interfaces</h3>
 1. Landing Page<br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img><br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Login.JPG"></img><br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Sign%Up.JPG"></img><br>
-2. Dashboard<br>
-
-<h3>Teacher Specific Features and Interfaces</h3><br>
-1. Create Classroom<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class_1.JPG"></img><br>
-2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Login.JPG"></img>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Sign%20Up.JPG"></img>
+2. Dashboard
+<h3>Teacher Specific Features and Interfaces</h3>
+1. Create Classroom<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_created_class_1.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class_1.JPG"></img><br>
+2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
 3. View people<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/People.JPG"></img><br>
 4. Create Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img><br>
 5. Create Exam<br>
 6. View created Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_teacher.JPG"></img><br>
 7. View created Exams<br>
-8. View Submitted Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments_1.JPG"></img><br>
+8. View Submitted Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments_1.JPG"></img><br>
 9. View Submitted Exams<br>
 <br>
 <br>
 <h3>Student Specific Features and Interfaces</h3><br>
-1. Join Classroom<br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%class.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%class_1.JPG"></img><br>
-2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
+1. Join Classroom<br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%20class.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%20class_1.JPG"></img><br>
+2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
 3. Leave Classroom<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Leave_class_1.JPG"></img><br>
 4. View people<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/People.JPG"></img><br>
 5. View Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_student.JPG"></img><br>
