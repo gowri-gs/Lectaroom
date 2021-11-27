@@ -73,5 +73,15 @@ Run the development server
 6. Submit Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/submit_answer.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/submit_answer_1.JPG"></img>
 7. View Exam<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_exam_teacher.JPG"></img>
 8. Submit Exam<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_submitexam.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_submitexam1.JPG"></img>
-
-
+<br>
+<h2><b>Useful Links</b></h2>
+<ul>
+  <li><a href="http://lectaroom.pythonanywhere.com">Deployed Website</a></li>
+  <li><a href="">Demo Video</a></li>
+</ul>
+<h2><b>Need Help?</b></h2>
+Feel free to contact me on <a href="https://www.linkedin.com/in/gowrisankar3/">LinkedIn</a><br><br>
+<p dir="auto">
+  <a href="https://www.instagram.com/gowri__sankar_/" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/0f5f6bef00b8271b7199c295af4c12b0e9b87aef2f2889daa7a15601e50957a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e7374616772616d2d666f6c6c6f772d707572706c652e7376673f6c6f676f3d696e7374616772616d266c6f676f436f6c6f723d7768697465" alt="Instagram" data-canonical-src="https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&amp;logoColor=white" style="max-width: 100%;"></a> 
+  </p>
