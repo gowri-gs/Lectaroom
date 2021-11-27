@@ -14,7 +14,7 @@ Install python interpreter (if not installed in the system) <br>
 <b>https://www.python.org/downloads/release/python-399/</b><br>
 <br>
 Add Python to the Windows Path Environment Variable (if not added)<br>
-<b>C:\Users\<<System_Name>>\AppData\Local\Programs\Python\Python39</b>
+<b>C:\Users\{System_Name}\AppData\Local\Programs\Python\Python39</b>
 <br>
 <br>
 Open Command Prompt and move into the directory having the project files using the change directory command
@@ -52,19 +52,18 @@ Run the development server
 <img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img>
 <img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Login.JPG"></img>
 <img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Sign%20Up.JPG"></img>
-2. Dashboard
+2. Dashboard<br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_dashboard.JPG"></img>
 <h3>Teacher Specific Features and Interfaces</h3>
-1. Create Classroom<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_created_class_1.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class_1.JPG"></img><br>
-2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
-3. View people<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/People.JPG"></img><br>
-4. Create Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img><br>
-5. Create Exam<br>
-6. View created Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_teacher.JPG"></img><br>
-7. View created Exams<br>
-8. View Submitted Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments_1.JPG"></img><br>
-9. View Submitted Exams<br>
-<br>
-<br>
+1. Create Classroom<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_create_class_1.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/created_class.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/create_class_1.JPG"></img>
+2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img>
+3. View people<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/People.JPG"></img>
+4. Create Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img>
+5. Create Exam<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_create_exam.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_create_exam_1.JPG"></img>
+6. View created Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_teacher.JPG"></img>
+7. View created Exams<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_exam_teacher.JPG"></img>
+8. View Submitted Assignments<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments_1.JPG"></img>
+9. View Submitted Exams<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_exam_submissions.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_exam_submissions1.JPG"></img>
 <h3>Student Specific Features and Interfaces</h3><br>
 1. Join Classroom<br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%20class.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Join%20class_1.JPG"></img><br>
 2. Add Stream<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_1.JPG"></img><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/add_stream_2.JPG"></img><br>
@@ -72,7 +71,7 @@ Run the development server
 4. View people<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/People.JPG"></img><br>
 5. View Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_student.JPG"></img><br>
 6. Submit Assignment<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/submit_answer.JPG"></img><br><br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/submit_answer_1.JPG"></img><br>
-7. View Exam<br>
-8. Submit Exam<br>
+7. View Exam<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_exam_teacher.JPG"></img>
+8. Submit Exam<br><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_submitexam.JPG"></img><img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/1_submitexam1.JPG"></img>
 
 
