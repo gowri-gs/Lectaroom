@@ -29,7 +29,7 @@
     <div class="col-12 col-sm-6 col-md-10">
         <br>
         {% if request.user.is_authenticated and request.user.is_teacher == 1 %}
-        <h4 class="floated"><a href="{% url 'assignment-create' %}" class="btn btn-info">Create an Exam</a></h4>
+        <h4 class="floated"><a href="{% url 'exam-create' %}" class="btn btn-info">Create an Exam</a></h4>
             <h4 class="floated"><a href="{% url 'exam-submission-list' %}" class="btn btn-info">Submitted Exams</a></h4>
             {% endif %}
             <br><br>

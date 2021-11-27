@@ -36,7 +36,7 @@
             <br><br>
                     <strong><h3>Exam Submissions</h3></strong>
         <hr/>
-<           table>
+            <table>
                 <thead>
                 <tr>
                     <th><h4>S. No</h4></th>
@@ -54,8 +54,6 @@
                 <td><p>{{ foo.university_id }} </p></td>
                 <td><p>{{ foo.content }}  </p></td>
                 <td><a href="{{foo.file.url}}" download><b>Download Answer</b></a></td>
-
-                <!--<a href="{% url 'assignment-submission-delete' foo.id %}">Delete Assignment</a>-->
              </tr>
                 {% endfor %}
 

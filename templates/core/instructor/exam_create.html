@@ -8,13 +8,13 @@
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <center> <h3> Create Exam </h3></center>
                           <br/>
-                    <form action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                    <form action="" method="POST" onsubmit="javascript:alert('Exam Created Successfully')" enctype="multipart/form-data">{% csrf_token %}
 
                         {{ form|bootstrap }}
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <button onclick="alert('Exam Created Successfully')" class="btn btn-primary btn-md text-white">Create</button>
+                                <input type="submit" value="Create" ></input>
                             </div>
                         </div>
                     </form>

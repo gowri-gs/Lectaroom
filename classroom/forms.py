@@ -11,9 +11,13 @@ class AssignmentCreateForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(AssignmentCreateForm, self).__init__(*args, **kwargs)
         self.fields['title'].label = "Assignment Name"
+        self.fields['title'].required = True
         self.fields['content'].label = "Content"
+        self.fields['content'].required = True
         self.fields['marks'].label = "Marks"
+        self.fields['marks'].required = True
         self.fields['duration'].label = "Duration"
+        self.fields['duration'].required = True
 
         self.fields['title'].widget.attrs.update(
             {
@@ -62,10 +66,14 @@ class ExamCreateForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ExamCreateForm, self).__init__(*args, **kwargs)
-        self.fields['title'].label = "Assignment Name"
+        self.fields['title'].label = "Exam Name"
+        self.fields['title'].required = True
         self.fields['content'].label = "Content"
+        self.fields['content'].required = True
         self.fields['marks'].label = "Marks"
+        self.fields['marks'].required = True
         self.fields['duration'].label = "Duration"
+        self.fields['duration'].required = True
 
         self.fields['title'].widget.attrs.update(
             {
@@ -116,9 +124,13 @@ class AssignmentSubmissionForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(AssignmentSubmissionForm, self).__init__(*args, **kwargs)
         self.fields['name'].label = " Name"
+        self.fields['name'].required = True
         self.fields['university_id'].label = "University Id"
+        self.fields['university_id'].required = True
         self.fields['content'].label = "Answer"
+        self.fields['content'].required = True
         self.fields['file'].label = "Or Upload File"
+        self.fields['file'].required = True
 
         self.fields['name'].widget.attrs.update(
             {
@@ -167,9 +179,13 @@ class ExamSubmissionForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(ExamSubmissionForm, self).__init__(*args, **kwargs)
         self.fields['name'].label = " Name"
+        self.fields['name'].required = True
         self.fields['university_id'].label = "University Id"
+        self.fields['university_id'].required = True
         self.fields['content'].label = "Answer"
+        self.fields['content'].required = True
         self.fields['file'].label = "Or Upload File"
+        self.fields['file'].required = True
 
         self.fields['name'].widget.attrs.update(
             {
