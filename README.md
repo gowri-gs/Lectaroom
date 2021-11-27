@@ -3,11 +3,6 @@
 <h2><b>Submission for Microsoft Engage 2021</b></h2>
 Functional prototype of a platform that gives students an array of digital academic and social tools<br>
 <br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img><br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img><br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_student.JPG"></img><br>
-<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br>
-
 To run this application,<br>
 Clone the repository using the following command<br>
 <div class="highlight highlight-source-shell position-relative overflow-auto">
@@ -50,3 +45,40 @@ Run the development server
   <pre>
   python manage.py runserver</pre>
 </div>
+<br><br>
+
+
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_student.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br>
+
+<h2><b>Features and Interfaces</b></h2>
+<h3>Commmon Features and Interfaces</h3><br>
+1. Landing Page<br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Login.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Sign%Up.JPG"></img><br>
+2. Dashboard<br>
+
+<h3>Teacher Specific Features and Interfaces</h3><br>
+1. Create Classroom
+2. Add Stream
+3. View people 
+4. Create Assignment
+5. Create Exam
+6. View created Assignments
+7. View created Exams
+8. View Submitted Assignments
+9. View Submitted Exams
+
+<h3>Student Specific Features and Interfaces</h3><br>
+1. Join Classroom
+2. Add Stream
+3. Leave Classroom
+4. View people
+5. View Assignment
+6. Submit Assignment
+7. View Exam
+8. Submit Exam
+
+
