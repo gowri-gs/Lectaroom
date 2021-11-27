@@ -19,7 +19,7 @@ Install python interpreter (if not installed in the system) <br>
 <b>https://www.python.org/downloads/release/python-399/</b><br>
 <br>
 Add Python to the Windows Path Environment Variable (if not added)<br>
-<b>C:\Users\<<System_Name>>\AppData\Local\Programs\Python\Python39<b>
+<b>C:\Users\<<System_Name>>\AppData\Local\Programs\Python\Python39</b>
 <br>
 <br>
 Open Command Prompt and move into the directory having the project files using the change directory command
