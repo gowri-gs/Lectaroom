@@ -3,7 +3,10 @@
 <h2><b>Submission for Microsoft Engage 2021</b></h2><br>
 Functional prototype of a platform that gives students an array of digital academic and social tools<br>
 <br>
-![image](https://user-images.githubusercontent.com/54004577/143684700-3ba914e7-b05c-47da-b132-3d1254c2c501.png)
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_creation.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Assignment_student.JPG"></img><br>
+<img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Submitted%20Assignments.JPG"></img><br>
 
 To run this application,<br>
 Clone the repository using the following command<br>
