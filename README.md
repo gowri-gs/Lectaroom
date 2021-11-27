@@ -3,6 +3,9 @@
 <h2><b>Submission for Microsoft Engage 2021</b></h2><br>
 Functional prototype of a platform that gives students an array of digital academic and social tools<br>
 <br>
+
+https://user-images.githubusercontent.com/54004577/143684666-2beb2165-c82e-46d0-99fb-649944c1adea.png
+
 To run this application,<br>
 Clone the repository using the following command<br>
 <div class="highlight highlight-source-shell position-relative overflow-auto">
