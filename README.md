@@ -1,6 +1,6 @@
 # Lectaroom
 
-<h2><b>Submission for Microsoft Engage 2021</b></h2><br>
+<h2><b>Submission for Microsoft Engage 2021</b></h2>
 Functional prototype of a platform that gives students an array of digital academic and social tools<br>
 <br>
 <img src="https://github.com/gowri-gs/Lectaroom/blob/master/media/others/Landing%20Page.JPG"></img><br>
@@ -19,7 +19,7 @@ Install python interpreter (if not installed in the system) <br>
 <b>https://www.python.org/downloads/release/python-399/</b><br>
 <br>
 Add Python to the Windows Path Environment Variable (if not added)<br>
-C:\Users\<<System_Name>>\AppData\Local\Programs\Python\Python39
+<b>C:\Users\<<System_Name>>\AppData\Local\Programs\Python\Python39<b>
 <br>
 <br>
 Open Command Prompt and move into the directory having the project files using the change directory command
