@@ -45,7 +45,14 @@ Run the development server
   <pre>
   python manage.py runserver</pre>
 </div>
-<br><br>
+
+<h2><b>Use existing login details (For better look and feel)</b></h2>
+<h3>Teacher Login</h3>
+Username: vijayalakshmi@gmail.com<br>
+Password: gowri2000
+<h3>Student Login</h3>
+Username: sruthigowri2000@gmail.com<br>
+Password: gowri2000
 <h2><b>Features and Interfaces</b></h2>
 <h3>Commmon Features and Interfaces</h3>
 1. Landing Page<br>
